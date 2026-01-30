@@ -17,6 +17,15 @@ app.use(express.static('public'));
 // Ruta que recibe el formulario
 app.post('/enviar', (req, res) => {
   const { nombre, vehiculo } = req.body;
+  if (!nombre || !vehiculo) {
+  return res.send(`
+    <h2 style="color:red">❌ Datos incompletos</h2>
+    <a href="/">Volver</a>
+  `);
+}
+const nombreLimpio = nombre.trim().toLowerCase();
+const vehiculoLimpio = vehiculo.trim().toLowerCase();
+
   const ruta = path.join(__dirname, 'public', 'data.json');
 
   let datos = [];
@@ -25,8 +34,11 @@ app.post('/enviar', (req, res) => {
   }
 
   const existe = datos.some(
-    d => d.nombre === nombre && d.vehiculo === vehiculo
-  );
+  d =>
+    d.nombre === nombreLimpio &&
+    d.vehiculo === vehiculoLimpio
+);
+
 
   if (existe) {
     return res.send(`
@@ -35,7 +47,10 @@ app.post('/enviar', (req, res) => {
     `);
   }
 
-  datos.push({ nombre, vehiculo });
+  datos.push({
+  nombre: nombreLimpio,
+  vehiculo: vehiculoLimpio
+});
   fs.writeFileSync(ruta, JSON.stringify(datos, null, 2));
   return res.redirect('/lista');
   

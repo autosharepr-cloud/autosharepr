@@ -42,5 +42,9 @@
   {
     "nombre": "juan lopez",
     "vehiculo": "hyudai elantra 2021"
+  },
+  {
+    "nombre": "pedro",
+    "vehiculo": "honda"
   }
 ]
