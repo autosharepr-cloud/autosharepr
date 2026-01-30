@@ -1,0 +1,46 @@
+[
+  {
+    "nombre": "mia",
+    "vehiculo": "toyota"
+  },
+  {
+    "nombre": "paola",
+    "vehiculo": "mercedez"
+  },
+  {
+    "nombre": "loco",
+    "vehiculo": "lexus"
+  },
+  {
+    "nombre": "mia",
+    "vehiculo": "toyota"
+  },
+  {
+    "nombre": "jua",
+    "vehiculo": "mazda"
+  },
+  {
+    "nombre": "sandy",
+    "vehiculo": "ford"
+  },
+  {
+    "nombre": "miguel",
+    "vehiculo": "buick"
+  },
+  {
+    "nombre": "papo",
+    "vehiculo": "dodge"
+  },
+  {
+    "nombre": "kike",
+    "vehiculo": "jeep"
+  },
+  {
+    "nombre": "paola perez",
+    "vehiculo": "mercedez benz"
+  },
+  {
+    "nombre": "juan lopez",
+    "vehiculo": "hyudai elantra 2021"
+  }
+]

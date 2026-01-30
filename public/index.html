@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Renta tu vehículo | Puerto Rico</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header>
+    <h1>🚗 Renta tu Vehículo en Puerto Rico</h1>
+    <p>Comparte tu auto y gana dinero mientras otros disfrutan la isla</p>
+  </header>
+
+  <main>
+    <section class="form-section">
+      <h2>Registrar vehículo</h2>
+
+      <form action="/enviar" method="POST">
+        <label for="nombre">Nombre del dueño</label>
+        <input
+          type="text"
+          id="nombre"
+          name="nombre"
+          placeholder="Ej: María Pérez"
+          required
+        />
+
+        <label for="vehiculo">Vehículo</label>
+        <input
+          type="text"
+          id="vehiculo"
+          name="vehiculo"
+          placeholder="Ej: Toyota Corolla 2022"
+          required
+        />
+
+        <button type="submit">Registrar vehículo</button>
+      </form>
+    </section>
+
+    <section class="cta">
+      <p>¿Quieres ver los vehículos registrados?</p>
+      <a href="/lista" class="btn-link">Ver vehículos disponibles</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 · Plataforma de renta de vehículos en Puerto Rico</p>
+  </footer>
+
+</body>
+</html>

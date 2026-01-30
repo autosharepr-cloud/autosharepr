@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Lista</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<h1>Lista de registros 🚗</h1>
+<ul id="lista"></ul>
+
+<a href="/">Volver</a>
+
+<script>
+fetch('/datos')
+
+
+  .then(res => res.json())
+  .then(data => {
+    const ul = document.getElementById('lista');
+    data.forEach(item => {
+      const li = document.createElement('li');
+      li.textContent = item.nombre + ' - ' + item.vehiculo;
+      ul.appendChild(li);
+    });
+  });
+</script>
+
+</body>
+</html>

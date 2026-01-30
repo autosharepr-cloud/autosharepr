@@ -1,0 +1,54 @@
+/* Reset básico */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* Fondo general */
+body {
+  background: #f4f6f8;
+  padding: 20px;
+}
+
+/* Título */
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Lista */
+ul {
+  list-style: none;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+/* Cada registro */
+li {
+  background: white;
+  margin-bottom: 12px;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Nombre */
+li span.nombre {
+  font-weight: bold;
+  color: #222;
+}
+
+/* Vehículo */
+li span.vehiculo {
+  color: #555;
+}
+body {background:red;
+}
